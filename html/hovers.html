@@ -36,8 +36,10 @@
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
-        transition: background-color 1.5s;
+        transition: background-color 1.5s,
+            color 1s;
         transition: opacity 2s;
+        
     }
 
     .join-button:hover{
@@ -60,9 +62,21 @@
         border-radius: 18px;
         font-weight: bold;
         cursor: pointer;
-        
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+        /**shawdow contains 4 values, in which 1st is shawdo for right side,
+        then second one is for vertical shift and third one is for blur, last one is the color */
+        transition: box-shadow 0.5s,color 0.5s;
     }
     
+    #tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(120, 12, 12, 0.25);
+    }
+
+    #tweet-button:active{
+        background-color: pink;
+        color:black;
+        
+    }
     
 </style>
 
