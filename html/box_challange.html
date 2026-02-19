@@ -1,0 +1,121 @@
+<style>
+    div{
+        display:flex;
+    }
+    .one button{
+        padding: 10px 15px 8px 12px;
+        margin-right: 10px;
+        
+    }
+
+    .one .ip{
+        margin-left:20px;
+
+    }
+
+    .one a{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .two{
+        margin-top: 20px;
+        
+    }
+
+    .two button{
+
+         margin-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-top: 20px;
+       
+        background-color: green;
+        border: none;
+        color: aliceblue;
+        transition: padding 1.5s;
+
+    }
+
+     .two button:hover{
+        padding: 35px 60px;
+            
+    }
+
+    .two button:active{
+        padding: 25px 60px;
+            
+    }
+
+    .three{
+        margin-top:20px
+    }
+
+    .three button{
+        color:white;
+        background-color: green;
+        padding: 5px 10px;
+        border:none;
+        box-shadow: 5px 5px 2px grey;
+        transition: transform 0.5s;
+
+    }
+
+    .three button:active{
+        box-shadow: none;
+        transform:translateY(5px);
+        /*transform: translateX(10px);*/
+
+    }
+
+    .four{
+        margin-top: 20px;
+    }
+
+    .four button {
+        margin-left:20px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: padding 0.5s;
+
+    }
+
+    .four button:hover{
+        /*padding-right:40px;
+        padding-left: 40px;*/
+        padding: 10px 40px;
+    }
+
+
+
+</style>
+
+<div class="one">
+    <button>Back</button>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <button class="ip">Next</button>
+</div>
+
+
+<div class="two">
+    <button>Stretch</button>
+</div>
+
+<div class="three">
+    <button>Shadow</button>
+
+</div>
+
+<div class="four">
+    <button id="one">One</button>
+    <button id="two">Two</button>
+    <button id="three">Three</button>
+</div>
