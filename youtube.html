@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YouTube.com clone</title>
+    <style>
+        .thumb1{
+            width: 300px;
+            /*if we change the width of the image then the height will also change according to its original dimensions*/
+            /*height: 300px;*/
+            /*object-fit: cover;*/
+            /*object-fit tries to bring the image into its original dimensions after the change of height and width */
+            /*object-position: right;*/
+            /*object-position: left;*/
+
+            /*object-fit: contain;*/
+            /*image fits excatly into its original dimension after the change of its height and width into a container*/
+
+
+        }
+
+        .search-bar{
+            font-size: 20px;
+            margin-left: 12px;
+            display: block;
+            /*goes to new line */
+        }
+
+        .vid-tit1{
+            width: 300px;
+        }
+
+        /*author1, .vid-stats1{
+            display: inline-block;
+            /*Stays in same line AND allows width/height*
+            /**By default everythinng will have display:block as property
+        }*/
+
+        .video-preview{
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+
+    </style>
 </head>
 <body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <!--<input type="checkbox">-->
+    <!--using input we take input form users and is used for search box, name, etc.-->
+
     
+    <div class="video-preview">
+        <!--divs are containers which are veryimp-->
+        <img class="thumb1" src="thumbnails/thumbnail-1.webp">
+
+        <p class="vid-tit1">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+
+        <p class="author1">
+            Marques Brownlee
+        </p>
+
+        <p class="vid-stats1">
+            3.4M views &middot; 6 months ago
+        </p>
+
+    </div>
+
+        <div class="video-preview">
+        <!--divs are containers which are veryimp-->
+        <img class="thumb1" src="thumbnails/thumbnail-2.webp">
+
+        <p class="vid-tit1">
+            Try Not To Laugh Challenge #9
+        </p>
+
+        <p class="author1">
+            Markiplier
+        </p>
+
+        <p class="vid-stats1">
+            19M views &middot;  4 years ago
+        </p>
+
+    </div>
 </body>
 </html>
