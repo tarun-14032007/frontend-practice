@@ -1,0 +1,34 @@
+.subscribe-button{
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 110px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+.join-button{
+        background-color: white;
+        color: rgb(42, 144, 212);
+        height: 36px;
+        width: 70px;
+        border-width: 1px;            border-style: solid;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+#tweet-button{
+        background-color: rgb(80, 203, 244);
+        height: 36px;
+        width: 75px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        
+}
