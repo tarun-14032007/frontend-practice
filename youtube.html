@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube.com clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        .thumb1{
+        p{
+            font-family: Roboto, Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .thumb{
             width: 300px;
             /*if we change the width of the image then the height will also change according to its original dimensions*/
             /*height: 300px;*/
@@ -27,21 +36,65 @@
             /*goes to new line */
         }
 
-        .vid-tit1{
+        /*.vid-title{
             width: 300px;
+        } removed this because of overflowing*/
+
+        .vid-title{
+            margin-top: 0%;
+            font-size: 14px;
+            font-weight: 500;
+            /*semi-bold value os 500*/
+            line-height: 20px;
+            margin-bottom: 12px;
+
         }
 
-        /*author1, .vid-stats1{
+        /*.author, .vid-stats{
             display: inline-block;
             /*Stays in same line AND allows width/height*
             /**By default everythinng will have display:block as property
         }*/
+
+        .author, .vid-stats{
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+
+        }
+
+        .author{
+            margin-bottom: 4px;
+        }
 
         .video-preview{
             width: 300px;
             display: inline-block;
             vertical-align: top;
             margin-right: 15px;
+        }
+
+        .channel-picture{
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+            
+        }
+
+        .video-info{
+            display: inline-block;
+            width: 200px;
+            
+        }
+
+        .profile-pic{
+            width: 100%;
+            border-radius: 50%;
+            /*for a circle alwasys set border radius to 50%*/
+        
+        }
+
+        .thumb-row{
+            margin-bottom: 12px;
         }
 
     </style>
@@ -54,37 +107,60 @@
     
     <div class="video-preview">
         <!--divs are containers which are veryimp-->
-        <img class="thumb1" src="thumbnails/thumbnail-1.webp">
 
-        <p class="vid-tit1">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-        </p>
+        <div class="thumb-row">
+            <img class="thumb" src="thumbnails/thumbnail-1.webp">
+        </div>
 
-        <p class="author1">
-            Marques Brownlee
-        </p>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-pic" src="channel-pictures/channel-1.jpeg">
+            </div>
 
-        <p class="vid-stats1">
-            3.4M views &middot; 6 months ago
-        </p>
+            <div class="video-info">
+                <p class="vid-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
 
+                <p class="author">
+                    Marques Brownlee
+                </p>
+
+                <p class="vid-stats">
+                    3.4M views &middot; 6 months ago
+                </p>
+            </div>
+            
+        </div>
     </div>
 
-        <div class="video-preview">
+    <div class="video-preview">
         <!--divs are containers which are veryimp-->
-        <img class="thumb1" src="thumbnails/thumbnail-2.webp">
+        
+        <div class="thumb-row">
+            <img class="thumb" src="thumbnails/thumbnail-2.webp">
+        </div>
 
-        <p class="vid-tit1">
-            Try Not To Laugh Challenge #9
-        </p>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-pic" src="channel-pictures/channel-2.jpeg">
+            </div>
 
-        <p class="author1">
-            Markiplier
-        </p>
+            <div class="video-info">
+                <p class="vid-title">
+                Try Not To Laugh Challenge #9
+                </p>
 
-        <p class="vid-stats1">
-            19M views &middot;  4 years ago
-        </p>
+                <p class="author">
+                    Markiplier
+                </p>
+
+                <p class="vid-stats">
+                    19M views &middot;  4 years ago
+                </p>
+            </div>
+        </div>
+        
 
     </div>
 </body>
